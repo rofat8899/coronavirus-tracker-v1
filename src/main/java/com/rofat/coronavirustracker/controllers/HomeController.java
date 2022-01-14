@@ -12,7 +12,7 @@ public class HomeController {
     @Autowired
     private CoronaVirusDataService coronaVirusDataService;
 
-    @GetMapping("")
+    @GetMapping("/api/covid")
     public CovidDTO getNewCases() {
         return coronaVirusDataService.getNewCases();
     }
