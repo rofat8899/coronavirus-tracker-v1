@@ -17,8 +17,7 @@ public class HomeController {
 
     @Autowired
     private CoronaVirusDataService coronaVirusDataService;
-
-    @CrossOrigin("http://localhost:9000")
+    
     @ResponseBody
     @GetMapping("/api/covid")
     public ResponseEntity<CovidDTO>  getNewCases()  {
