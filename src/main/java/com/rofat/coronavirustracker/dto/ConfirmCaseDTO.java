@@ -1,19 +1,9 @@
 package com.rofat.coronavirustracker.dto;
 
-import com.rofat.coronavirustracker.models.LocationStats;
-
 public class ConfirmCaseDTO {
-    private String Country;
+    private String name;
     private int TotalConfirmedCases;
     private int NewConfirmedCase;
-
-    public String getCountry() {
-        return Country;
-    }
-
-    public void setCountry(String country) {
-        Country = country;
-    }
 
     public int getTotalConfirmedCases() {
         return TotalConfirmedCases;
@@ -31,9 +21,17 @@ public class ConfirmCaseDTO {
         NewConfirmedCase = newConfirmedCase;
     }
 
-    public ConfirmCaseDTO(LocationStats locationStats) {
-        this.Country = locationStats.getCountry();
-        this.TotalConfirmedCases = locationStats.getLatestTotalCases();
-        this.NewConfirmedCase = locationStats.getDiffFromPrevDay();
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ConfirmCaseDTO(String name, int totalConfirmedCases, int newConfirmedCase) {
+        this.name = name;
+        TotalConfirmedCases = totalConfirmedCases;
+        NewConfirmedCase = newConfirmedCase;
     }
 }

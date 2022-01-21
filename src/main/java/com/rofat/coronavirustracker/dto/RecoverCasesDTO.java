@@ -36,4 +36,5 @@ public class RecoverCasesDTO {
         this.TotalRecoverCases = locationStats.getLatestTotalCases();
         this.NewRecoverCase = locationStats.getDiffFromPrevDay();
     }
+
 }

@@ -1,6 +1,5 @@
 package com.rofat.coronavirustracker.services;
 
-import com.rofat.coronavirustracker.dto.ConfirmCaseDTO;
 import com.rofat.coronavirustracker.dto.CovidDTO;
 import com.rofat.coronavirustracker.models.LocationStats;
 import org.apache.commons.csv.CSVFormat;
