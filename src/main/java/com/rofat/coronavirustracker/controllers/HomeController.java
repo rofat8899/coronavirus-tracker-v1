@@ -17,7 +17,7 @@ public class HomeController {
 
     @Autowired
     private CoronaVirusDataService coronaVirusDataService;
-    
+
     @ResponseBody
     @GetMapping("/api/covid")
     public ResponseEntity<CovidDTO>  getNewCases()  {
